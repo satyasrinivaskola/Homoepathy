@@ -136,9 +136,60 @@ color:#198754;
 }
 
 .facilities ul{
-
 line-height:2.2;
-position:relative;
-left:480px;
 font-size:18px;
+max-width:600px;
+margin:auto;
+text-align:left;
+}
+
+
+
+@media screen and (max-width:768px){
+
+.navbar{
+flex-direction:column;
+}
+
+.navbar ul{
+flex-direction:column;
+align-items:center;
+gap:10px;
+margin-top:15px;
+}
+
+.about-doctor{
+flex-direction:column;
+text-align:center;
+}
+
+.doctor-img img{
+width:100%;
+max-width:300px;
+margin:auto;
+}
+
+.doctor-content h2{
+font-size:28px;
+}
+
+.mission{
+flex-direction:column;
+}
+
+.why-grid{
+grid-template-columns:1fr;
+}
+
+.facilities ul{
+left:0;
+margin:auto;
+max-width:300px;
+}
+
+footer{
+font-size:14px;
+padding:15px;
+}
+
 }

@@ -260,3 +260,131 @@ body{background:#f4f8f2}
 .navbar{
 background-color:aquamarine;
 }
+/* =================================
+   TABLET VIEW
+================================= */
+
+@media screen and (max-width:1024px){
+
+.contact-container{
+grid-template-columns:1fr;
+}
+
+.social-icons{
+flex-wrap:wrap;
+}
+
+}
+
+/* =================================
+   MOBILE VIEW
+================================= */
+
+@media screen and (max-width:768px){
+
+.navbar{
+flex-direction:column;
+padding:15px;
+}
+
+.navbar h2{
+font-size:22px;
+text-align:center;
+}
+
+.navbar ul{
+flex-direction:column;
+align-items:center;
+gap:12px;
+margin-top:15px;
+}
+
+.contact-section{
+padding:20px;
+}
+
+.contact-container{
+grid-template-columns:1fr;
+gap:20px;
+}
+
+.contact-info{
+padding:20px;
+}
+
+.contact-form{
+padding:20px;
+}
+
+.contact-info h2,
+.contact-form h2{
+font-size:24px;
+text-align:center;
+}
+
+.contact-box{
+flex-direction:column;
+text-align:center;
+align-items:center;
+}
+
+.contact-box i{
+font-size:30px;
+}
+
+.contact-form input,
+.contact-form textarea{
+padding:12px;
+}
+
+.social-section{
+padding:30px 15px;
+}
+
+.social-icons{
+flex-wrap:wrap;
+gap:15px;
+}
+
+.social-icons a{
+width:50px;
+height:50px;
+font-size:20px;
+}
+
+footer{
+padding:15px;
+font-size:14px;
+}
+
+}
+
+/* =================================
+   SMALL MOBILE
+================================= */
+
+@media screen and (max-width:480px){
+
+.navbar h2{
+font-size:18px;
+}
+
+.contact-info h2,
+.contact-form h2{
+font-size:20px;
+}
+
+.contact-box h4{
+font-size:16px;
+}
+
+.contact-box p{
+font-size:14px;
+}
+
+.contact-form button{
+font-size:16px;
+padding:12px;
+}
+
+}

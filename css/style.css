@@ -1,217 +1,179 @@
-
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
-body{background:#f4f8f2}
-
-.top-bar{background:#0b6b2b;color:#fff;text-align:center;padding:10px}
-.navbar{display:flex;justify-content:space-between;align-items:center;padding:20px;background:#fff}
-.navbar ul{display:flex;gap:20px;list-style:none}
-.navbar a{text-decoration:none;color:#222}
-.hero{height:70vh;display:flex;flex-direction:column;justify-content:center;align-items:center;
-background-image:url('./pic.png');
-text-align:center
-;  width:100%;
-height:500px;
-color:white;
-
-   background-size: cover;
-    
-background-repeat: no-repeat;
-
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
 }
-body{
-display:flex;
-flex-direction: column;}
-.hero h1{font-size:56px}
-.btn{background:#198754;
-color:#fff;
-padding:12px 20px;
-border-radius:8px;
-text-decoration:none}
-.content{padding:60px}
-footer{background:#0b6b2b;color:#fff;text-align:center;padding:20px}
 
+body{
+    background:#f4f8f2;
+}
+
+/* NAVBAR */
 
 .navbar{
-background-color: aquamarine;}
-
-.doctor-img{
-display:flex;
-flex-direction:row;
-padding:20px;
-margin:10px;
-gap:10px;
-background-color: beige;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 40px;
+    background:aquamarine;
 }
 
+.navbar h2{
+    font-size:28px;
+}
 
-.container{
-margin-left:40px;}
-input,textarea,select{
-padding:10px;
-margin:10px;}
-form{
-background-color: antiquewhite;
-width:400px;}
+.navbar ul{
+    display:flex;
+    gap:20px;
+    list-style:none;
+}
 
-/* =========================
-   TABLET VIEW
-========================= */
+.navbar a{
+    text-decoration:none;
+    color:#222;
+    font-weight:bold;
+}
 
-@media (max-width: 1024px){
+/* HERO SECTION */
 
 .hero{
-padding:40px;
-text-align:center;
+    width:100%;
+    min-height:80vh;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+    color:white;
+
+    background-image:url('./pic.png');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    padding:20px;
 }
 
-.hero-content h1{
-font-size:50px;
+.hero h1{
+    font-size:56px;
+    margin-bottom:15px;
+    text-shadow:2px 2px 5px rgba(0,0,0,.5);
 }
 
-.features{
-grid-template-columns:repeat(2,1fr);
+.hero p{
+    font-size:20px;
+    margin-bottom:25px;
+    text-shadow:1px 1px 4px rgba(0,0,0,.5);
 }
 
-.treatments-container{
-grid-template-columns:repeat(2,1fr);
+.btn{
+    background:#198754;
+    color:#fff;
+    padding:12px 25px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
 }
 
-.benefit-grid{
-grid-template-columns:repeat(2,1fr);
+.btn:hover{
+    background:#146c43;
 }
 
-.steps{
-grid-template-columns:repeat(2,1fr);
-}
-
-.contact-container,
-.appointment-container,
-.doctor-card,
-.about-doctor{
-grid-template-columns:1fr;
-display:block;
-}
-
-.stats{
-flex-wrap:wrap;
-}
-
-}
-
-/* =========================
-   MOBILE VIEW
-========================= */
-
-@media (max-width: 768px){
-
-.top-bar{
-display:none;
-}
-
-nav{
-flex-direction:column;
-padding:15px;
-}
-
-nav ul{
-flex-direction:column;
-gap:15px;
-text-align:center;
-margin-top:15px;
-}
-
-.hero{
-height:auto;
-padding:50px 20px;
-text-align:center;
-}
-
-.hero-content h1{
-font-size:35px;
-}
-
-.hero-content p{
-font-size:18px;
-}
-
-.stats{
-flex-direction:column;
-align-items:center;
-}
-
-.stat-card{
-width:100%;
-max-width:300px;
-}
-
-.features,
-.treatments-container,
-.why-grid,
-.benefit-grid,
-.steps{
-grid-template-columns:1fr;
-}
-
-.doctor-card,
-.about-doctor{
-flex-direction:column;
-text-align:center;
-}
-
-.doctor-img img,
-.doctor-image img{
-width:100%;
-max-width:300px;
-}
-
-.contact-container,
-.appointment-container{
-display:block;
-}
-
-.contact-form,
-.contact-info,
-.appointment-form,
-.appointment-info{
-margin-bottom:20px;
-}
-
-.contact-banner h1,
-.treatment-banner h1,
-.appointment-banner h1,
-.about-banner h1{
-font-size:35px;
-}
+/* FOOTER */
 
 footer{
-flex-direction:column;
-text-align:center;
-gap:20px;
+    background:#0b6b2b;
+    color:white;
+    text-align:center;
+    padding:20px;
 }
 
+/* GLOBAL IMAGE */
+
+img{
+    max-width:100%;
+    height:auto;
+    display:block;
 }
 
-/* =========================
+/* ======================
+   TABLET
+====================== */
+
+@media screen and (max-width:1024px){
+
+    .navbar{
+        padding:15px 20px;
+    }
+
+    .hero h1{
+        font-size:42px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+}
+
+/* ======================
+   MOBILE
+====================== */
+
+@media screen and (max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .navbar ul{
+        flex-direction:column;
+        gap:12px;
+        margin-top:15px;
+    }
+
+    .hero{
+        min-height:60vh;
+        padding:40px 20px;
+    }
+
+    .hero h1{
+        font-size:32px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .btn{
+        width:220px;
+        text-align:center;
+    }
+}
+
+/* ======================
    SMALL MOBILE
-========================= */
+====================== */
 
-@media (max-width: 480px){
+@media screen and (max-width:480px){
 
-.hero-content h1{
-font-size:28px;
-}
+    .navbar h2{
+        font-size:20px;
+    }
 
-.hero-content p{
-font-size:16px;
-}
+    .hero h1{
+        font-size:26px;
+    }
 
-.btn-primary,
-.btn-secondary{
-display:block;
-margin:10px auto;
-width:100%;
-max-width:250px;
-text-align:center;
-}
+    .hero p{
+        font-size:14px;
+    }
 
+    .btn{
+        width:200px;
+    }
 }

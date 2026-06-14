@@ -1,22 +1,26 @@
 
 *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
 body{background:#f4f8f2}
-.navbar{
-background-color:green;
-}
+
 .top-bar{background:#0b6b2b;color:#fff;text-align:center;padding:10px}
 .navbar{display:flex;justify-content:space-between;align-items:center;padding:20px;background:#fff}
 .navbar ul{display:flex;gap:20px;list-style:none}
 .navbar a{text-decoration:none;color:#222}
 .hero{height:70vh;display:flex;flex-direction:column;justify-content:center;align-items:center;
-background-image:url('./pic.png');text-align:center
+background-image:url('./pic.png');
+text-align:center
 ;  width:100%;
-   background-position: center;
+height:500px;
+color:white;
+
    background-size: cover;
-    object-fit:cover;
+    
 background-repeat: no-repeat;
 
-width:100%}
+}
+body{
+display:flex;
+flex-direction: column;}
 .hero h1{font-size:56px}
 .btn{background:#198754;
 color:#fff;
@@ -48,3 +52,166 @@ margin:10px;}
 form{
 background-color: antiquewhite;
 width:400px;}
+
+/* =========================
+   TABLET VIEW
+========================= */
+
+@media (max-width: 1024px){
+
+.hero{
+padding:40px;
+text-align:center;
+}
+
+.hero-content h1{
+font-size:50px;
+}
+
+.features{
+grid-template-columns:repeat(2,1fr);
+}
+
+.treatments-container{
+grid-template-columns:repeat(2,1fr);
+}
+
+.benefit-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+.steps{
+grid-template-columns:repeat(2,1fr);
+}
+
+.contact-container,
+.appointment-container,
+.doctor-card,
+.about-doctor{
+grid-template-columns:1fr;
+display:block;
+}
+
+.stats{
+flex-wrap:wrap;
+}
+
+}
+
+/* =========================
+   MOBILE VIEW
+========================= */
+
+@media (max-width: 768px){
+
+.top-bar{
+display:none;
+}
+
+nav{
+flex-direction:column;
+padding:15px;
+}
+
+nav ul{
+flex-direction:column;
+gap:15px;
+text-align:center;
+margin-top:15px;
+}
+
+.hero{
+height:auto;
+padding:50px 20px;
+text-align:center;
+}
+
+.hero-content h1{
+font-size:35px;
+}
+
+.hero-content p{
+font-size:18px;
+}
+
+.stats{
+flex-direction:column;
+align-items:center;
+}
+
+.stat-card{
+width:100%;
+max-width:300px;
+}
+
+.features,
+.treatments-container,
+.why-grid,
+.benefit-grid,
+.steps{
+grid-template-columns:1fr;
+}
+
+.doctor-card,
+.about-doctor{
+flex-direction:column;
+text-align:center;
+}
+
+.doctor-img img,
+.doctor-image img{
+width:100%;
+max-width:300px;
+}
+
+.contact-container,
+.appointment-container{
+display:block;
+}
+
+.contact-form,
+.contact-info,
+.appointment-form,
+.appointment-info{
+margin-bottom:20px;
+}
+
+.contact-banner h1,
+.treatment-banner h1,
+.appointment-banner h1,
+.about-banner h1{
+font-size:35px;
+}
+
+footer{
+flex-direction:column;
+text-align:center;
+gap:20px;
+}
+
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px){
+
+.hero-content h1{
+font-size:28px;
+}
+
+.hero-content p{
+font-size:16px;
+}
+
+.btn-primary,
+.btn-secondary{
+display:block;
+margin:10px auto;
+width:100%;
+max-width:250px;
+text-align:center;
+}
+
+}

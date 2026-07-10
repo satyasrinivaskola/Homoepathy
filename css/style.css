@@ -127,7 +127,7 @@ img{
 
     .navbar{
         flex-direction:column;
-        text-align:center;
+        text-align:left;
     }
 
     .navbar ul{

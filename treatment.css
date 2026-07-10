@@ -183,7 +183,7 @@ text-align:center;
 
 .navbar ul{
 flex-direction:column;
-align-items:center;
+align-items:left;
 gap:12px;
 margin-top:15px;
 }
